@@ -1,0 +1,59 @@
+@import "_variables";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: $mont, sans-serif;
+  font-weight: 600;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 981px) {
+  .left-side {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #343434;
+    color: #FFF;
+    // setup
+    //background-color: red;
+  }
+  .right-side {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 350px);
+    background-color: #EFEFEF;
+    // setup
+    //background-color: blue;
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .left-side {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    // setup
+    background-color: red;
+    z-index: 100;
+  }
+  .right-side {
+    position: relative;    // setup
+    margin-top: 70px;
+    background-color: blue;
+  }
+}

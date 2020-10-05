@@ -1,0 +1,33 @@
+@import "../variables";
+
+@media screen and (min-width: 981px) {
+  .footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: block;
+    div.text {
+      text-align: center;
+      p {
+        display: inline-block;
+        font-weight: 400;
+        color: #FFFA;
+        span {
+          vertical-align: -5px;
+          font-size: 2rem;
+          margin: 0 3px;
+        }
+        a {
+          color: #FFFA;
+          text-decoration: none;
+          transition: color .2s ease-in-out;
+         }
+         a:hover {
+           color: $color;
+           transition: color .2s ease-in-out;
+         }
+
+      }
+    }
+  }
+}
