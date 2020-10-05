@@ -1,0 +1,36 @@
+@import "../variables";
+
+section.content-cv {
+  display: flex;
+  section.graph {
+    width: calc(100% - 300px);
+    .pres {
+      background-color: #FFF;
+      display: block;
+      width: 90%;
+      margin: 50px auto 0;
+      text-align: justify;
+      padding: 15px 10px 20px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-family: $sita, serif;
+      font-weight: 400;
+      color: #333;
+      a {
+        color: #333;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+      }
+      a:hover {
+        color: $color;
+        transition: color .2s ease-in-out;
+      }
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  section.skills {
+    width: 300px;
+  }
+}
