@@ -179,4 +179,17 @@
       }
     }
   }
+
+  .long-footer {
+    width: 100%;
+    border-top: 1px #00000022 solid;
+    margin-top: 25px;
+    p {
+      font-size: .6rem;
+      padding: 15px 5px;
+      text-align: right;
+      font-weight: 400;
+      opacity: .6;
+    }
+  }
 }

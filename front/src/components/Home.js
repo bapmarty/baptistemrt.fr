@@ -1,9 +1,10 @@
 import React from 'react';
 
 import TimeLine from './TimeLine';
+import ProgressBar from './ProgressBar';
+import LongFooter from '../layouts/LongFooter';
 
 import "../assets/scss/components/Home.scss";
-import ProgressBar from './ProgressBar';
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
     {"skill" : "Php / MySQL", "percent": "0.75"},
     {"skill" : "Laravel", "percent": "0.45"},
     {"skill" : "Ruby", "percent": "0.4"},
-    {"skill" : "Ruby On Rails", "percent": "0.45"},
+    {"skill" : "Ruby On Rails", "percent": "0.25"},
     {"skill" : "Docker", "percent": "0.85"},
     {"skill" : "Git", "percent": "0.75"}
   ];
@@ -46,6 +47,7 @@ const Home = () => {
           }
         </section>
       </section>
+      <LongFooter />
     </>
   );
 }

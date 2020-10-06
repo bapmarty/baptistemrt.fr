@@ -1,7 +1,5 @@
 import React, { useEffect, useState} from 'react';
 
-import "../assets/scss/components/Home.scss";
-
 const ProgressBar = ({width, percent}) => {
 
   const [value, setValue] = useState(0);
