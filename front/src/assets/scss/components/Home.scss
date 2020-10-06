@@ -83,14 +83,47 @@ section.content-cv {
         margin: 120px 0;
       }
       .left-tl {
+        .tl-block:first-child {
+          margin-top: 25px;
+        }
         .tl-block {
+          position: relative;
           margin-right: 15px;
+          border: 1px #00000022 solid;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: -9px;
+            bottom: 50%;
+            transform: rotate(45deg);
+            background-color: #FFF;
+            border-top: 1px #00000022 solid;
+            border-right: 1px #00000022 solid;
+            border-radius: 3px;
+          }
         }
       }
       .right-tl {
         margin-top: 120px;
         .tl-block {
+          position: relative;
+          border: 1px #00000022 solid;
           margin-left: 15px;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: -9px;
+            bottom: 50%;
+            transform: rotate(45deg);
+            background-color: #FFF;
+            border-left: 1px #00000022 solid;
+            border-bottom: 1px #00000022 solid;
+            border-radius: 3px;
+          }
         }
       }
     }
