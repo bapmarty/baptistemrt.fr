@@ -6,7 +6,7 @@ const TimeLine = () => {
   const arr = [
     {"title" : "Encadrant d'escalade (Vertical'Art)", "start" : "Novembre 2019", "end" : "Actuellement", "post" : "CDI (20h)", "desc" : "Professeur d'escalade en SAE à Paris Pigalle"},
     {"title" : "École 42", "start" :"Novembre 2019", "end" : "Actuellement", "post" : "Étudiant", "desc" : "École de programmation à Paris"},
-    {"title" : "Stage développeur web chez Skilters", "start" :"Mai 2019", "end" : "Juin 2019", "post" : "Stagiaire", "desc" : "Développement de la nouvelle interface des rapports soft skills \nStack: ReactJS, Typescript, Redux, Jest, Docker"},
+    {"title" : "Stage développeur web chez Skilters", "start" :"Mai 2019", "end" : "Juin 2019", "post" : "Stagiaire", "desc" : "Développement de la nouvelle interface des rapports soft skills \n Stack: ReactJS, Typescript, Redux, Jest, Docker"},
     {"title" : "École d'informatique EPSI (BAC +1)", "start" :"Septembre 2018", "end" : "Juillet 2019", "post" : "Étudiant", "desc" : "École de programmation à La Défense"},
     {"title" : "Initiateur SAE (Surface Artificielle d'escalade)", "start" :"Septembre 2015", "end" : "Juillet 2019", "post" : "Bénévole", "desc" : "Encadrement de cours Enfants et Adultes dans un club d'escalade"},
     {"title" : "BAC STI2D mention Assez Bien", "start" :"Juillet 2018", "end" : "", "post" :"", "desc" : "Lycée Emilie de Bretueil, 78"},

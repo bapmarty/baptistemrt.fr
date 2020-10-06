@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
   margin: 0;
 }
 
+.display-linebreak {
+  white-space: pre-line;
+}
+
 @media screen and (min-width: 1220px) {
   .left-side {
     position: fixed;

@@ -15,7 +15,7 @@ const TimeLineBlock = ({title, start, end, post, desc, opacity}) => {
       <div className="tl-block" style={{ opacity: value }}>
         <h5>{title}</h5>
         <h6>{start + " - " + (end ? end + " - " : end) + post }</h6>
-        <p>{desc}</p>
+        <p className="display-linebreak">{desc}</p>
       </div>
     </>
   );
