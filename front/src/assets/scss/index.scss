@@ -21,44 +21,35 @@ h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
     display: block;
     left: 0;
     top: 0;
+    bottom: 0;
     width: 350px;
-    height: 100%;
     background-color: $gray;
     color: #FFF;
-    // setup
-    //background-color: red;
   }
   .right-side {
+    //display: flex;
     position: relative;
     margin-left: auto;
-    height: 100%;
     width: calc(100% - 350px);
     background-color: #EFEFEF;
-    // setup
-    //background-color: blue;
   }
 }
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 981px) and (max-width: 1220px) {
   .left-side {
     position: fixed;
     display: block;
     left: 0;
     top: 0;
+    bottom: 0;
     width: 300px;
-    height: 100%;
     background-color: $gray;
     color: #FFF;
-    // setup
-    //background-color: red;
   }
   .right-side {
     position: relative;
     margin-left: auto;
-    height: 100%;
     width: calc(100% - 300px);
     background-color: #EFEFEF;
-    // setup
-    //background-color: blue;
   }
 }
 
