@@ -1,4 +1,5 @@
 import React from 'react';
+import TimeLineBlock from './TimeLineBlock';
 
 const TimeLine = () => {
 
@@ -27,12 +28,9 @@ const TimeLine = () => {
               arr.map((tl, i) => {
                 console.log(i);
                 if (i % 2 === 0) {
+                  console.log(i);
                   return (
-                    <div className="tl-block">
-                      <h5>{tl.title}</h5>
-                      <h6>{tl.start + " - " + (tl.end ? tl.end + " - " : tl.end) + tl.post }</h6>
-                      <p>{tl.desc}</p>
-                    </div>
+                    <TimeLineBlock title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
               })
@@ -45,11 +43,7 @@ const TimeLine = () => {
                 console.log(i);
                 if (i % 2 != 0) {
                   return (
-                    <div className="tl-block">
-                      <h5>{tl.title}</h5>
-                      <h6>{tl.start + " - " + (tl.end ? tl.end + " - " : tl.end) + tl.post }</h6>
-                      <p>{tl.desc}</p>
-                    </div>
+                    <TimeLineBlock title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
               })

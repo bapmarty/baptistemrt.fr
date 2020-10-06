@@ -4,8 +4,6 @@
 @media screen and (min-width: 981px) {
   section.content-cv {
     display: flex;
-    flex-direction: row;
-    height: 100%;
     section.global-tl {
       width: calc(100% - 300px);
       .text {
@@ -61,16 +59,25 @@
             border-radius: 3px;
           }
         }
-        .right-tl {
-          height: 100%;
-          width: 50%;
-          //background-color: #FFF;
+        @for $i from 1 to 10 {
+          .left-tl {
+            .tl-block:nth-child(#{$i}n) {
+              transition-delay: #{$i * 0.5}s;
+            }
+          }
+          .right-tl {
+            .tl-block:nth-child(#{$i}n) {
+              transition-delay: #{$i * 0.5}s;
+            }
+          }
         }
+
         .tl-block {
           padding: 15px 10px 20px;
           display: block;
           background-color: #FFF;
           border-radius: 5px;
+          transition: opacity 2s ease;
           h5 {
             font-size: 1rem;
           }
@@ -115,6 +122,8 @@
           }
         }
         .right-tl {
+          height: 100%;
+          width: 50%;
           margin-top: 120px;
           .tl-block:last-child {
             margin-bottom: 15px;
