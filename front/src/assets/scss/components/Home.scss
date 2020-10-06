@@ -1,137 +1,140 @@
 @import "../variables";
 
-section.content-cv {
-  display: flex;
-  section.global-tl {
-    width: calc(100% - 300px);
-    .text {
-      background-color: #FFF;
-      display: block;
-      width: 90%;
-      margin: 50px auto 0;
-      text-align: justify;
-      padding: 15px 10px 20px;
-      border-radius: 5px;
-      font-size: 0.9rem;
-      font-family: $sita, serif;
-      font-weight: 400;
-      color: #333;
-      a {
-        color: #333;
-        text-decoration: none;
-        transition: color .2s ease-in-out;
-      }
-      a:hover {
-        color: $color;
-        transition: color .2s ease-in-out;
-      }
-      span {
-        font-size: 1.2rem;
-      }
-    }
-    // section tl
-    section.arrow-tl {
-      display: flex;
-      width: 90%;
-      margin: 50px auto 0;
-      .left-tl {
-        width: 50%;
-        //background-color: #FFF;
-        // background-color: red;
-      }
-      .tl {
-        position: relative;
-        display: block;
-        width: 2px;
-        background-color: $gray;
-        &:before {
-          content: "";
-          position: absolute;
-          width: 9px;
-          height: 9px;
-          transform: rotate(45deg);
-          margin-left: -5px;
-          margin-top: -10px;
-          border-top: 3px $graytranparent solid;
-          border-left: 3px $graytranparent solid;
-          border-radius: 3px;
-        }
-      }
-      .right-tl {
-        width: 50%;
-        //background-color: #FFF;
-      }
-      .tl-block {
-        padding: 15px 10px 20px;
-        display: block;
+
+@media screen and (min-width: 981px) {
+  section.content-cv {
+    display: flex;
+    section.global-tl {
+      width: calc(100% - 300px);
+      .text {
         background-color: #FFF;
+        display: block;
+        width: 90%;
+        margin: 50px auto 0;
+        text-align: justify;
+        padding: 15px 10px 20px;
         border-radius: 5px;
-        h5 {
-          font-size: 1rem;
+        font-size: 0.9rem;
+        font-family: $sita, serif;
+        font-weight: 400;
+        color: #333;
+        a {
+          color: #333;
+          text-decoration: none;
+          transition: color .2s ease-in-out;
         }
-        h6 {
-          font-weight: 400;
-          font-size: .8rem;
+        a:hover {
+          color: $color;
+          transition: color .2s ease-in-out;
         }
-        p {
-          font-weight: 400;
-          font-style: italic;
-          font-size: .7rem;
+        span {
+          font-size: 1.2rem;
         }
       }
-      .tl-block:not(:first-child) {
-        margin: 120px 0;
-      }
-      .left-tl {
-        .tl-block:first-child {
-          margin-top: 25px;
+      // section tl
+      section.arrow-tl {
+        display: flex;
+        width: 90%;
+        margin: 50px auto 0;
+        .left-tl {
+          width: 50%;
+          //background-color: #FFF;
+          // background-color: red;
         }
-        .tl-block {
+        .tl {
           position: relative;
-          margin-right: 15px;
-          border: 1px #00000022 solid;
-          &:after {
+          display: block;
+          width: 2px;
+          background-color: $gray;
+          &:before {
             content: "";
             position: absolute;
-            width: 16px;
-            height: 16px;
-            right: -9px;
-            bottom: 50%;
+            width: 9px;
+            height: 9px;
             transform: rotate(45deg);
-            background-color: #FFF;
-            border-top: 1px #00000022 solid;
-            border-right: 1px #00000022 solid;
+            margin-left: -5px;
+            margin-top: -10px;
+            border-top: 3px $graytranparent solid;
+            border-left: 3px $graytranparent solid;
             border-radius: 3px;
           }
         }
-      }
-      .right-tl {
-        margin-top: 120px;
+        .right-tl {
+          width: 50%;
+          //background-color: #FFF;
+        }
         .tl-block {
-          position: relative;
-          border: 1px #00000022 solid;
-          margin-left: 15px;
-          &:after {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            left: -9px;
-            bottom: 50%;
-            transform: rotate(45deg);
-            background-color: #FFF;
-            border-left: 1px #00000022 solid;
-            border-bottom: 1px #00000022 solid;
-            border-radius: 3px;
+          padding: 15px 10px 20px;
+          display: block;
+          background-color: #FFF;
+          border-radius: 5px;
+          h5 {
+            font-size: 1rem;
+          }
+          h6 {
+            font-weight: 400;
+            font-size: .8rem;
+          }
+          p {
+            font-weight: 400;
+            font-style: italic;
+            font-size: .7rem;
+          }
+        }
+        .tl-block:not(:first-child) {
+          margin: 120px 0;
+        }
+        .left-tl {
+          .tl-block:first-child {
+            margin-top: 25px;
+          }
+          .tl-block {
+            position: relative;
+            margin-right: 15px;
+            border: 1px #00000022 solid;
+            &:after {
+              content: "";
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              right: -9px;
+              bottom: 50%;
+              transform: rotate(45deg);
+              background-color: #FFF;
+              border-top: 1px #00000022 solid;
+              border-right: 1px #00000022 solid;
+              border-radius: 3px;
+            }
+          }
+        }
+        .right-tl {
+          margin-top: 120px;
+          .tl-block {
+            position: relative;
+            border: 1px #00000022 solid;
+            margin-left: 15px;
+            &:after {
+              content: "";
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              left: -9px;
+              bottom: 50%;
+              transform: rotate(45deg);
+              background-color: #FFF;
+              border-left: 1px #00000022 solid;
+              border-bottom: 1px #00000022 solid;
+              border-radius: 3px;
+            }
           }
         }
       }
+  
     }
-
-  }
-
-  // skills
-  section.skills {
-    width: 300px;
+  
+    // skills
+    section.skills {
+      width: 300px;
+    }
   }
 }

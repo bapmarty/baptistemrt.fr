@@ -31,9 +31,9 @@ const Navbar = () => {
             <li><div className="icon-contact"><FontAwesomeIcon icon={faMapMarkerAlt} /></div><div><a href="https://www.google.fr/maps/place/51+Rue+Rodier,+75009+Paris/@48.8805808,2.3415458,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e419d9cad5f:0xb5904a7820e3cc6c!8m2!3d48.8805773!4d2.3437345">51 rue Rodier, 75009 Paris</a></div></li>
           </ul>
           <ul className="socials">
-            <li><div className="icon-contact"><FontAwesomeIcon icon={faGithub} /></div><div><a href="https://github.com/baptistemrt">github.com/baptistemrt</a></div></li>
-            <li><div className="icon-contact"><FontAwesomeIcon icon={faLinkedin} /></div><div><a href="https://linkedin.com/in/baptiste-mrt">linkedin.com/in/baptiste-mrt</a></div></li>
-            <li><div className="icon-contact"><FontAwesomeIcon icon={faInstagram} /></div><div><a href="https://instagram.com/baptistemrrt">instagram.com/baptistemrrt</a></div></li>
+            <li><div className="icon-contact"><FontAwesomeIcon icon={faGithub} /></div><div><a href="https://github.com/baptistemrt">baptistemrt</a></div></li>
+            <li><div className="icon-contact"><FontAwesomeIcon icon={faLinkedin} /></div><div><a href="https://linkedin.com/in/baptiste-mrt">baptiste-mrt</a></div></li>
+            <li><div className="icon-contact"><FontAwesomeIcon icon={faInstagram} /></div><div><a href="https://instagram.com/baptistemrrt">baptistemrrt</a></div></li>
           </ul>
         </section>
       </div>
