@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="footer">
         <div className="text">
           <p className="made">
-            Made with ❤️ by Baptiste Martin
-            <span>&#183;</span> 
-          <a href="https://cv.baptistemrt.fr">PDF Version</a>
+            Made with <span role="img" aria-label="heart">❤️</span> by Baptiste Martin
+            <span className="point">&#183;</span> 
+            <a href="https://cv.baptistemrt.fr">PDF Version</a>
           </p>
         </div>
       </div>
