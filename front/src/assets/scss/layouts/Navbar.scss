@@ -2,6 +2,9 @@
 
 @media screen and (min-width: 981px) {
   .left-side {
+    .mobile-bar {
+      display: none;
+    }
     .header {
       img {
         display: block;
@@ -73,6 +76,40 @@
         }
         ul.socials {
           margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 981px) {
+  .left-side {
+    .mobile-bar {
+      display: flex;
+      margin: 25px;
+      justify-content: space-between;
+      div {
+        svg {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .mobile-block.open {
+      left: 0;
+      transition: left .6s ease-in-out;
+    }
+    .mobile-block.close {
+      left: -100%;
+      transition: left .6s ease-in-out;
+    }
+    .mobile-block {
+      background-color: blue;
+      position: fixed;
+      width: 100%;
+      top: 70px;
+      bottom: 0;
+      .header {
+        img {
+          width: 128px;
         }
       }
     }
