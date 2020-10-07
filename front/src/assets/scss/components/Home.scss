@@ -190,6 +190,29 @@
     }
   }
 
+  .other {
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    .other-content {
+      background-color: #FFF;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-evenly;
+      div {
+        padding: 30px;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 64px;
+        }
+        h4 {
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   .long-footer {
     width: 100%;
     border-top: 1px #00000022 solid;
