@@ -31,6 +31,7 @@ const TimeLine = () => {
                     <TimeLineBlock key={i} title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
+                return null;
               })
             }
             </section>
@@ -38,11 +39,12 @@ const TimeLine = () => {
             <section className="right-tl">
             {
               arr.map((tl, i) => {
-                if (i % 2 != 0) {
+                if (i % 2 !== 0) {
                   return (
                     <TimeLineBlock key={i} title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
+                return null;
               })
             }
             </section>

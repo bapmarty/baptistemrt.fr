@@ -8,7 +8,7 @@ const TimeLineBlock = ({title, start, end, post, desc, opacity}) => {
 
   useEffect(() => {
     setValue(1);
-  });
+  }, []);
 
   return (
     <>
