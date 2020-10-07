@@ -2,6 +2,8 @@ import React from 'react';
 
 import ProgressBar from "./ProgressBar";
 
+import "../assets/scss/components/Skills.scss";
+
 const Skills = () => {
   
   const skillsList = [
@@ -34,7 +36,7 @@ const Skills = () => {
             return (
               <div className="progress-content" key={i}>
                 <h4>{skill.skill}</h4>
-                <ProgressBar width={260} percent={skill.percent} />
+                <ProgressBar percent={skill.percent} />
               </div>
             );
           })
