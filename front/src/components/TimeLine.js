@@ -26,11 +26,9 @@ const TimeLine = () => {
             <section className="left-tl">
             {
               arr.map((tl, i) => {
-                console.log(i);
                 if (i % 2 === 0) {
-                  console.log(i);
                   return (
-                    <TimeLineBlock title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
+                    <TimeLineBlock key={i} title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
               })
@@ -40,10 +38,9 @@ const TimeLine = () => {
             <section className="right-tl">
             {
               arr.map((tl, i) => {
-                console.log(i);
                 if (i % 2 != 0) {
                   return (
-                    <TimeLineBlock title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
+                    <TimeLineBlock key={i} title={tl.title} start={tl.start} end={tl.end} post={tl.post} desc={tl.desc} opacity={0}/>
                   );
                 }
               })

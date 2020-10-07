@@ -32,7 +32,7 @@ const Skills = () => {
         {
           skillsList.map((skill, i) => {
             return (
-              <div className="progress-content">
+              <div className="progress-content" key={i}>
                 <h4>{skill.skill}</h4>
                 <ProgressBar width={260} percent={skill.percent} />
               </div>
