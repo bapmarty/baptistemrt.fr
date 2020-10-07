@@ -5,6 +5,8 @@ import Console from "../assets/images/console.svg";
 import Runner from "../assets/images/runner.svg";
 import Github from "../assets/images/github.svg";
 
+import "../assets/scss/components/Other.scss";
+
 const Other = () => {
   return (
     <>
