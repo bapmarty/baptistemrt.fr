@@ -4,37 +4,34 @@ services:
   front:
     build: ./front/
     restart: always
-    ports:
-      - 3000:3000
     volumes:
       - ./front/:/usr/src/
       - ./front/package.json:/usr/src/package.json
       - /usr/src/node_modules
-        #    labels:
-      #      traefik.enable: "true"
-      #      traefik.docker.network: "traefik_network"
-      #      traefik.http.services.baptistemrtfr.loadbalancer.server.port: "3000"
-      #      #HTTP
-      #      traefik.http.routers.front-baptistemrtfr.entrypoints: "http"
-      #      traefik.http.routers.front-baptistemrtfr.rule: "Host(`dev.baptistemrt.fr`)"
-      #      traefik.http.routers.front-baptistemrtfr.middlewares: redirect-https
-      #      #HTTPS
-      #      traefik.http.routers.front-baptistemrtfr-secure.entrypoints: "https"
-      #      traefik.http.routers.front-baptistemrtfr-secure.rule: "Host(`dev.baptistemrt.fr`)"
-      #      #TLS
-      #      traefik.http.routers.front-baptistemrtfr-secure.tls: "true"
-      #      traefik.http.routers.front-baptistemrtfr-secure.tls.certresolver: "le-baptistemrt"
-      #      traefik.http.routers.front-baptistemrtfr-secure.tls.domains[0].main: "baptistemrt.fr"
-      #      traefik.http.routers.front-baptistemrtfr-secure.tls.domains[0].sans: "dev.baptistemrt.fr"
-      #      #Redirect https
-      #      traefik.http.middlewares.redirect-https.redirectscheme.scheme: "https"
-      #      traefik.http.middlewares.redirect-https.redirectscheme.permanent: "true"
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: "traefik_network"
+      traefik.http.services.baptistemrtfr.loadbalancer.server.port: "3000"
+      #HTTP
+      traefik.http.routers.front-baptistemrtfr.entrypoints: "http"
+      traefik.http.routers.front-baptistemrtfr.rule: "Host(`baptistemrt.fr`)"
+      traefik.http.routers.front-baptistemrtfr.middlewares: redirect-https
+      #HTTPS
+      traefik.http.routers.front-baptistemrtfr-secure.entrypoints: "https"
+      traefik.http.routers.front-baptistemrtfr-secure.rule: "Host(`baptistemrt.fr`)"
+      #TLS
+      traefik.http.routers.front-baptistemrtfr-secure.tls: "true"
+      traefik.http.routers.front-baptistemrtfr-secure.tls.certresolver: "le-baptistemrt"
+      traefik.http.routers.front-baptistemrtfr-secure.tls.domains[0].main: "baptistemrt.fr"
+      #Redirect https
+      traefik.http.middlewares.redirect-https.redirectscheme.scheme: "https"
+      traefik.http.middlewares.redirect-https.redirectscheme.permanent: "true"
     networks:
-      #      - traefik_network
+      - traefik_network
       - baptistemrt
 
 networks:
   baptistemrt:
     name: baptistemrt
-    # traefik_network:
-    #external: true
+  traefik_network:
+    external: true
