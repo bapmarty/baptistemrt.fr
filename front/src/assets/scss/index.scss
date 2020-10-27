@@ -8,6 +8,7 @@ body {
   font-weight: 600;
   overflow-x: hidden;
   user-select: none;
+  background-color: #EFEFEF;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
@@ -70,9 +71,8 @@ h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
     z-index: 100;
   }
   .right-side {
-    position: relative;    // setup
+    position: relative;
     margin-top: 70px;
-    background-color: blue;
-    display: none;
+    background-color: #EFEFEF;
   }
 }
