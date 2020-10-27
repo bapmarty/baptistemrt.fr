@@ -1,0 +1,78 @@
+@import "../variables";
+
+@media screen and (min-width: 1220px) {
+  .other {
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    .other-content {
+      background-color: #FFF;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-evenly;
+      div {
+        padding: 30px;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 64px;
+        }
+        h4 {
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 981px) and (max-width: 1220px) {
+  .other {
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    .other-content {
+      background-color: #FFF;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-evenly;
+      div {
+        padding: 30px;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 64px;
+        }
+        h4 {
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .other {
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    .other-content {
+      background-color: #FFF;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      div {
+        padding: 30px;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 64px;
+        }
+        h4 {
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,78 @@
+@import "_variables";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: $mont, sans-serif;
+  font-weight: 600;
+  overflow-x: hidden;
+  user-select: none;
+  background-color: #EFEFEF;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a, span, hr, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+@media screen and (min-width: 1220px) {
+  .left-side {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    background-color: $gray;
+    color: #FFF;
+  }
+  .right-side {
+    //display: flex;
+    position: relative;
+    margin-left: auto;
+    width: calc(100% - 350px);
+    background-color: #EFEFEF;
+  }
+}
+@media screen and (min-width: 981px) and (max-width: 1220px) {
+  .left-side {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: $gray;
+    color: #FFF;
+  }
+  .right-side {
+    position: relative;
+    margin-left: auto;
+    width: calc(100% - 300px);
+    background-color: #EFEFEF;
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .left-side {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    color: #FFF;
+    background-color: $gray;
+    z-index: 100;
+  }
+  .right-side {
+    position: relative;
+    margin-top: 70px;
+    background-color: #EFEFEF;
+  }
+}
